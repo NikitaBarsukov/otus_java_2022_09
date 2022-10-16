@@ -1,0 +1,3 @@
+rootProject.name = 'otusJava'
+include 'hw-01-gradle'
+include 'hw-04-generics'
