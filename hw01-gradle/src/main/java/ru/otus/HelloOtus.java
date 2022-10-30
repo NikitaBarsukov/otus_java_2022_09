@@ -1,4 +1,4 @@
-package com.softdev;
+package ru.otus;
 
 import com.google.common.collect.ImmutableList;
 
