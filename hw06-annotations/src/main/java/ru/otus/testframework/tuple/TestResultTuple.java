@@ -3,7 +3,7 @@ package ru.otus.testframework.tuple;
 
 public class TestResultTuple {
     private String lastCaseName;
-    private Exception exception;
+    private Throwable exception;
 
     public boolean isCompletedNormally() {
         return exception == null;
@@ -17,11 +17,11 @@ public class TestResultTuple {
         this.lastCaseName = lastCaseName;
     }
 
-    public Exception getException() {
+    public Throwable getException() {
         return exception;
     }
 
-    public void setException(Exception exception) {
-        this.exception = exception;
+    public void setException(Throwable exception) {
+        this.exception = exception.getCause().getCause();
     }
 }

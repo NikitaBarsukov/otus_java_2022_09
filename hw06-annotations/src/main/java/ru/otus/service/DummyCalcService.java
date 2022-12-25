@@ -14,9 +14,9 @@ public class DummyCalcService {
      * Add some digit to all elements and return sum of it.
      * @return Sum of inner list.
      */
-    public int dummySum(int add) {
+    public int dummySum(Number add) {
         return digits.stream()
-                .map(d -> d + add)
+                .map(d -> d + (Integer) add)
                 .reduce(0, Integer::sum);
     }
 }

@@ -30,6 +30,11 @@ public class DummyCalcServiceTest {
         log.info("AssertThat {} is equal to 12", res);
     }
 
+    @Test
+    public void sumShouldThrowClassCastExep() {
+        int res = service.dummySum(4.5);
+    }
+
     @After
     public void clean() {
         service = null;
