@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.otus'
+version 'unspecified'
+
+dependencies {
+    implementation "org.slf4j:slf4j-log4j12"
+    implementation "com.google.guava:guava"
+}
+
+test {
+    useJUnitPlatform()
+}
